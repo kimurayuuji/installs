@@ -148,3 +148,29 @@ https://github.com/rclone/rclone
 https://qiita.com/devzooiiooz/items/f08c7bb9e935a79f7367
 
 
+# zsh-autocomplete
+
+## repository 
+
+https://github.com/marlonrichert/zsh-autocomplete
+
+## my .bashrc
+
+```bash
+# source {zsh-autocomplete clone}/zsh-autocomplete.plugin.zsh
+source /home/kimurayuuji/git/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+```
+
+
+# nb
+
+## repository
+
+https://github.com/xwmx/nb
+
+## completion
+
+```bash
+sudo nb completions install --download
+```
+
