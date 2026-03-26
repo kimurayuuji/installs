@@ -135,6 +135,13 @@ function y() {
 }
 ```
 
+
+## plugins
+
+```
+ya pkg add KKV9/compressya pkg add KKV9/compress
+```
+
 ## version
 
 ```
