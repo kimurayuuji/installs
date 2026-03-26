@@ -82,7 +82,7 @@ plugins=(
   zsh-autosuggestions
 )
 
-
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -178,4 +178,18 @@ export NVM_DIR="$HOME/.nvm"
 
 # Use Alt + Backspace for backward-kill-word instead of Ctrl + w
 bindkey '^[^?' backward-kill-word
+
 . "/home/yuji/.deno/env"
+
+source /home/yuji/git/zeno.zsh/zeno.zsh
+
+export ZENO_HOME=~/.config/zeno
+export ZENO_GIT_CAT="bat --color=always"
+
+if [[ -n $ZENO_LOADED ]]; then
+  bindkey ' '  zeno-auto-snippet
+  bindkey '^i' zeno-completion
+  bindkey '^r' zeno-history-selection
+fi
+
+
