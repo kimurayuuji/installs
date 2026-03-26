@@ -113,6 +113,12 @@ source $ZSH/oh-my-zsh.sh
 
 # customize
 
+export PATH="$PATH:/mnt/c/Windows"
+export PATH="$PATH:/mnt/c/Windows/System32"
+export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
+export PATH="$PATH:${HOME}/.local/bin"
+
+
 ## fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
@@ -125,11 +131,6 @@ eval "$(zoxide init zsh)"
 if [ $SHLVL = 1 ]; then
   tmux
 fi
-
-export PATH="$PATH:/mnt/c/Windows"
-export PATH="$PATH:/mnt/c/Windows/System32"
-export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
-export PATH="$PATH:/home/kimura/.local/bin"
 
 ## yazi
 export EDITOR=nvim
@@ -153,7 +154,7 @@ alias lt4='ls -lT -L=4'
 alias lt2='ls -lT -L=2'
 
 ## bat
-alias bat="batcat"
+## alias bat="batcat"
 
 ## oh-my-zsh
 ZSH_THEME="powerlevel10k/powerlevel10k"
@@ -166,7 +167,8 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 source ~/functions/load.sh
 
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+#[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" > /dev/null 2>&1
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-source /home/kimura/git/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+source ${HOME}/git/zsh-autocomplete/zsh-autocomplete.plugin.zsh
