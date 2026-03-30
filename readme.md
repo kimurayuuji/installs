@@ -369,3 +369,10 @@ rga --version
 ripgrep-all 0.10.10
 ```
 
+# zeno.sh
+
+## repositoy
+
+https://github.com/yuki-yano/zeno.zsh
+
+

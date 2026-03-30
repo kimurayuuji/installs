@@ -129,6 +129,7 @@ export PATH="$PATH:${HOME}/.local/bin"
 ## zoxide
 eval "$(zoxide init zsh)"
 . "$HOME/.cargo/env"
+alias cd='z'
 
 ## tmux
 ## 初回シェル時のみ tmux実行
@@ -151,11 +152,6 @@ function y() {
 
 ## eza
 alias ls='eza --icons=always --color=always'
-alias la='ls -la'
-alias lat4='ls -laT -L=4'
-alias lat2='ls -laT -L=2'
-alias lt4='ls -lT -L=4'
-alias lt2='ls -lT -L=2'
 
 ## bat
 ## alias bat="batcat"
