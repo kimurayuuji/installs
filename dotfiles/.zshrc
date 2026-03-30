@@ -121,7 +121,7 @@ export PATH="$PATH:/mnt/c/Windows"
 export PATH="$PATH:/mnt/c/Windows/System32"
 export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
 export PATH="$PATH:${HOME}/.local/bin"
-
+export PATH="$PATH:${HOME}/go/bin"
 
 ## fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
