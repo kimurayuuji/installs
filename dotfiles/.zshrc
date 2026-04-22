@@ -163,21 +163,22 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-
+# Customized my functions
 source ~/functions/load.sh
+zle -N ghq-fzf
+bindkey '^g' ghq-fzf
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-#source ${HOME}/git/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
 # Use Alt + Backspace for backward-kill-word instead of Ctrl + w
 bindkey '^[^?' backward-kill-word
 
 . "/home/yuji/.deno/env"
 
-source /home/yuji/git/zeno.zsh/zeno.zsh
+source ${HOME}/ghq/github.com/yuki-yano/zeno.zsh/zeno.zsh
 
 export ZENO_HOME=~/.config/zeno
 export ZENO_GIT_CAT="bat --color=always"
@@ -187,5 +188,8 @@ if [[ -n $ZENO_LOADED ]]; then
   bindkey '^i' zeno-completion
   bindkey '^r' zeno-history-selection
 fi
+
+# xdg-open
+export BROWSER="wslview"
 
 

@@ -376,3 +376,16 @@ ripgrep-all 0.10.10
 https://github.com/yuki-yano/zeno.zsh
 
 
+# ghq
+
+## repository
+
+https://github.com/x-motemen/ghq
+
+# cz-git
+
+## repository
+
+https://github.com/Zhengqbbb/cz-git
+
+
